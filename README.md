@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🚀 TechNova IT Solutions — Full Stack Website
 
 A production-ready company website built with **FastAPI** (backend) + **React + Vite** (frontend).
@@ -118,3 +119,7 @@ npm run dev
 | Forms | React Hook Form |
 | HTTP Client | Axios |
 | Notifications | React Hot Toast |
+=======
+# next-tech-solutions
+A production-ready company website built with **FastAPI** (backend) + **React + Vite** (frontend).
+>>>>>>> 39284b6764c5a1da66e505e78287506a1a45d63d
