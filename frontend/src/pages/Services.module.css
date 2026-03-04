@@ -1,0 +1,187 @@
+.hero {
+  position: relative;
+  padding: 80px 0;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border);
+  overflow: hidden;
+}
+.heroBg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 50% 60% at 80% 50%, rgba(0,119,255,0.08) 0%, transparent 60%);
+  pointer-events: none;
+}
+.heroDesc {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  max-width: 560px;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+.heroMeta { display: flex; gap: 12px; flex-wrap: wrap; }
+.metaBadge {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.serviceCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 36px;
+  transition: all var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+.serviceCard:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-hover);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-glow);
+}
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+.icon { font-size: 2.4rem; }
+.num {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--border);
+}
+.title {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+.desc {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.75;
+  margin-bottom: 24px;
+}
+.features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 28px;
+  flex: 1;
+}
+.features li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+}
+.features li svg { color: var(--accent-cyan); flex-shrink: 0; }
+.cardCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--accent-cyan);
+  font-weight: 600;
+  font-size: 0.88rem;
+  text-decoration: none;
+  transition: gap var(--transition);
+}
+.cardCta:hover { gap: 10px; }
+
+.processSection { background: var(--bg-secondary); }
+.processGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+.processCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px 20px;
+  text-align: center;
+}
+.processStep {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 12px;
+}
+.processTitle {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+.processDesc {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  line-height: 1.65;
+}
+
+.ctaSection { padding: 80px 0; }
+.ctaBox {
+  text-align: center;
+  background: var(--bg-card);
+  border: 1px solid var(--border-hover);
+  border-radius: 20px;
+  padding: 64px 40px;
+}
+.ctaTitle {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 14px;
+}
+.ctaDesc {
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+  font-size: 1.05rem;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 80px 0;
+  color: var(--text-muted);
+}
+.spinner {
+  width: 36px;
+  height: 36px;
+  border: 3px solid var(--border);
+  border-top-color: var(--accent-cyan);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+@media (max-width: 900px) {
+  .servicesGrid { grid-template-columns: 1fr; }
+  .processGrid  { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .processGrid { grid-template-columns: 1fr; }
+}
