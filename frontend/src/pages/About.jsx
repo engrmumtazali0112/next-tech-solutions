@@ -32,7 +32,7 @@ export default function About() {
             We're a Team of Engineers Who Actually Care
           </h1>
           <p className={styles.heroDesc}>
-            Founded in 2019, AI & Django Innovators is a remote-first software development agency
+            Founded in 2024, Next Tech Solutions is a remote-first software development agency
             specializing in intelligent full-stack solutions. We bridge the gap between cutting-edge
             AI technology and real-world business needs.
           </p>

@@ -1,13 +1,15 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowRight, Code2, Brain, Globe, CheckCircle, TrendingUp, Users, Briefcase, Star } from 'lucide-react'
+import { ArrowRight, Code2, TrendingUp, Users, Briefcase, Star, Target, BarChart3, Rocket, Wrench } from 'lucide-react'
 import { getServices, getStats, getTestimonials } from '../api'
 import styles from './Home.module.css'
+
+const API = 'http://localhost:8000'
 
 function AnimatedCounter({ target, suffix = '' }) {
   const [count, setCount] = useState(0)
   useEffect(() => {
-    const step = Math.ceil(target / 60)
+    const step = Math.ceil(target / 55)
     const timer = setInterval(() => {
       setCount(prev => {
         if (prev + step >= target) { clearInterval(timer); return target }
@@ -19,9 +21,25 @@ function AnimatedCounter({ target, suffix = '' }) {
   return <span>{count}{suffix}</span>
 }
 
+const TECH_ITEMS = ['FastAPI', 'React.js', 'Django', 'PostgreSQL', 'AWS', 'Docker', 'OpenAI', 'LangChain', 'React Native', 'Redis', 'Stripe', 'CI/CD']
+
+const PROCESS_STEPS = [
+  { num: '01', title: 'Discovery Call',      desc: 'Free 30-min consultation to understand your goals and define scope.' },
+  { num: '02', title: 'Proposal & Estimate', desc: 'Detailed scope, timeline, and fixed-price quote within 24 hours.' },
+  { num: '03', title: 'Build & Iterate',     desc: 'Agile sprints with weekly demos — you see progress every step.' },
+  { num: '04', title: 'Deploy & Support',    desc: 'Production launch with full handover, docs, and ongoing support.' },
+]
+
+const AUTO_FEATURES = [
+  { Icon: Target,    title: 'Identify Bottlenecks',  desc: 'We audit your workflow to find exactly where time and money are being lost.' },
+  { Icon: Wrench,    title: 'Build Smart Systems',   desc: 'Custom APIs, AI pipelines, and integrations that replace manual tasks.' },
+  { Icon: BarChart3, title: 'Monitor & Optimize',    desc: 'Real-time dashboards and performance tracking — you stay in full control.' },
+  { Icon: Rocket,    title: 'Scale Confidently',     desc: 'Architecture built to handle 10x growth without rebuilding from scratch.' },
+]
+
 export default function Home() {
-  const [services, setServices]       = useState([])
-  const [stats, setStats]             = useState(null)
+  const [services,     setServices]     = useState([])
+  const [stats,        setStats]        = useState(null)
   const [testimonials, setTestimonials] = useState([])
 
   useEffect(() => {
@@ -32,205 +50,226 @@ export default function Home() {
 
   return (
     <div>
-      {/* ── Hero ──────────────────────────────────────────────── */}
+
+      {/* ── Hero ─────────────────────────────────────────────── */}
       <section className={styles.hero}>
         <div className={styles.heroBg} />
-        <div className={`container ${styles.heroContent}`}>
-          <div className={styles.heroText}>
-            <span className="label">Welcome to Next Tech Solutions</span>
-            <h1 className={styles.heroTitle}>
-              Building the Future<br />
-              <span className={styles.gradientText}>One Line of Code</span><br />
-              at a Time
-            </h1>
-            <p className={styles.heroDesc}>
-              We deliver intelligent full-stack solutions — from SaaS platforms and AI integrations
-              to cloud applications and mobile apps. Your vision, our expertise.
-            </p>
-            <div className={styles.heroCtas}>
-              <Link to="/services" className="btn btn-primary">
-                Explore Services <ArrowRight size={16} />
-              </Link>
-              <Link to="/contact" className="btn btn-outline">
-                Start a Project
-              </Link>
-            </div>
-            <div className={styles.heroTrust}>
-              {['FastAPI', 'React', 'Django', 'AWS', 'PostgreSQL'].map(t => (
-                <span key={t} className={styles.tech}>{t}</span>
-              ))}
-            </div>
-          </div>
-
-          <div className={styles.heroVisual}>
-            <div className={styles.codeCard}>
-              <div className={styles.codeHeader}>
-                <span className={styles.dot} style={{ background: '#ff5f57' }} />
-                <span className={styles.dot} style={{ background: '#febc2e' }} />
-                <span className={styles.dot} style={{ background: '#28c840' }} />
-                <span className={styles.fileName}>app.py</span>
+        <div className={styles.heroBottomLine} />
+        <div className="container">
+          <div className={styles.heroInner}>
+            <div className={styles.heroLeft}>
+              <div className={styles.heroEyebrow}>
+                <span className={styles.eyebrowDot} />
+                Welcome to Next Tech Solutions
               </div>
-              <pre className={styles.code}><code>{`from fastapi import FastAPI
-from ai_engine import InnovatorAI
-
-app = FastAPI()
-ai  = InnovatorAI(model="gpt-4")
-
-@app.get("/innovate")
-async def innovate(idea: str):
-    solution = await ai.build(idea)
-    return {
-        "status": "shipped 🚀",
-        "solution": solution,
-        "quality": "production"
-    }`}</code></pre>
+              <h1 className={styles.heroTitle}>Make Your Business</h1>
+              <h1 className={styles.heroTitle2}><span className={styles.goldText}>Automate & Scale</span></h1>
+              <p className={styles.heroDesc}>
+                We build intelligent full-stack solutions — SaaS platforms, AI integrations,
+                cloud applications and mobile apps that drive real business growth.
+                Your vision, our execution.
+              </p>
+              <div className={styles.heroBtns}>
+                <Link to="/contact" className={styles.btnGold}>Get a Free Quote <ArrowRight size={15} /></Link>
+                <Link to="/services" className={styles.btnGhost}>Explore Services</Link>
+              </div>
+              <div className={styles.heroTrust}>
+                <div className={styles.trustLabel}>Tech We Use</div>
+                <div className={styles.trustPills}>
+                  {['FastAPI', 'React', 'Django', 'AWS', 'PostgreSQL', 'Python', 'Docker'].map(t => (
+                    <span key={t} className={styles.pill}>{t}</span>
+                  ))}
+                </div>
+              </div>
             </div>
-            <div className={styles.floatingBadge} style={{ top: '-16px', right: '-16px' }}>
-              <Brain size={14} /> AI Powered
-            </div>
-            <div className={styles.floatingBadge} style={{ bottom: '-16px', left: '-16px', animationDelay: '1s' }}>
-              <CheckCircle size={14} /> Production Ready
+
+            <div className={styles.heroVisual}>
+              <div className={styles.quoteCard}>
+                <div className={styles.quoteMark}>"</div>
+                <div className={styles.quoteStars}>
+                  {[...Array(5)].map((_, i) => <Star key={i} size={13} fill="#F5A623" color="#F5A623" />)}
+                </div>
+                <p className={styles.quoteText}>
+                  "Next Tech automated our entire workflow. What used to take{' '}
+                  <em>3 days now runs in minutes.</em> ROI was visible in week one."
+                </p>
+                <div className={styles.quoteMeta}>
+                  <div className={styles.quoteAvatar}>JD</div>
+                  <div>
+                    <div className={styles.quoteName}>James Davis</div>
+                    <div className={styles.quoteRole}>CTO @ TechFlow Inc.</div>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.miniCards}>
+                {[
+                  { num: '50+', label: 'Projects Delivered' },
+                  { num: '40+', label: 'Happy Clients' },
+                  { num: '$20', label: 'Starting Rate/hr' },
+                  { num: '24h', label: 'Response Time' },
+                ].map(({ num, label }) => (
+                  <div key={label} className={styles.miniCard}>
+                    <div className={styles.miniNum}>{num}</div>
+                    <div className={styles.miniLabel}>{label}</div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── Stats ─────────────────────────────────────────────── */}
+      {/* ── Tech Marquee ─────────────────────────────────────── */}
+      <div className={styles.techBar}>
+        <div className={styles.marqueeTrack}>
+          {[...TECH_ITEMS, ...TECH_ITEMS].map((t, i) => (
+            <span key={i} className={styles.marqueeItem}>
+              <span className={styles.marqueeDot} /> {t}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {/* ── Stats ────────────────────────────────────────────── */}
       {stats && (
         <section className={styles.statsSection}>
           <div className="container">
             <div className={styles.statsGrid}>
-              <div className={styles.statItem}>
-                <TrendingUp size={24} className={styles.statIcon} />
-                <div className={styles.statNum}><AnimatedCounter target={stats.projects_completed} suffix="+" /></div>
-                <div className={styles.statLabel}>Projects Completed</div>
-              </div>
-              <div className={styles.statItem}>
-                <Users size={24} className={styles.statIcon} />
-                <div className={styles.statNum}><AnimatedCounter target={stats.happy_clients} suffix="+" /></div>
-                <div className={styles.statLabel}>Happy Clients</div>
-              </div>
-              <div className={styles.statItem}>
-                <Briefcase size={24} className={styles.statIcon} />
-                <div className={styles.statNum}><AnimatedCounter target={stats.years_experience} suffix="+" /></div>
-                <div className={styles.statLabel}>Years Experience</div>
-              </div>
-              <div className={styles.statItem}>
-                <Code2 size={24} className={styles.statIcon} />
-                <div className={styles.statNum}><AnimatedCounter target={stats.technologies} suffix="+" /></div>
-                <div className={styles.statLabel}>Technologies</div>
-              </div>
+              <div className={styles.statItem}><TrendingUp size={22} className={styles.statIcon} /><div className={styles.statNum}><AnimatedCounter target={stats.projects_completed} suffix="+" /></div><div className={styles.statLabel}>projects_completed</div></div>
+              <div className={styles.statItem}><Users size={22} className={styles.statIcon} /><div className={styles.statNum}><AnimatedCounter target={stats.happy_clients} suffix="+" /></div><div className={styles.statLabel}>happy_clients</div></div>
+              <div className={styles.statItem}><Briefcase size={22} className={styles.statIcon} /><div className={styles.statNum}><AnimatedCounter target={stats.years_experience} suffix="+" /></div><div className={styles.statLabel}>years_experience</div></div>
+              <div className={styles.statItem}><Code2 size={22} className={styles.statIcon} /><div className={styles.statNum}><AnimatedCounter target={stats.technologies} suffix="+" /></div><div className={styles.statLabel}>technologies</div></div>
             </div>
           </div>
         </section>
       )}
 
-      {/* ── Services Preview ──────────────────────────────────── */}
+      {/* ── Services ─────────────────────────────────────────── */}
       <section className="section">
         <div className="container">
           <div className={styles.sectionHead}>
             <div>
-              <span className="label">What We Do</span>
-              <h2 className="section-title">Services We Provide</h2>
-              <p className="section-subtitle">End-to-end development services tailored for startups and growing businesses.</p>
+              <div className={styles.secLabel}>What We Do</div>
+              <h2 className={styles.secTitle}>Services We Provide</h2>
+              <p className={styles.secSub}>End-to-end development solutions tailored for startups and growing businesses.</p>
             </div>
-            <Link to="/services" className="btn btn-outline">
-              All Services <ArrowRight size={16} />
-            </Link>
+            <Link to="/services" className={styles.btnGhost}>All Services →</Link>
           </div>
-          <div className={styles.servicesGrid}>
+          <div className={styles.srvGrid}>
             {services.map((s, i) => (
-              <div key={s.id} className="card" style={{ animationDelay: `${i * 0.08}s` }}>
-                <div className={styles.serviceIcon}>{s.icon}</div>
-                <h3 className={styles.serviceTitle}>{s.title}</h3>
-                <p className={styles.serviceDesc}>{s.description}</p>
-                <div className={styles.serviceTags}>
-                  {s.features.slice(0, 2).map(f => (
-                    <span key={f} className={styles.tag}>{f}</span>
-                  ))}
-                </div>
+              <div key={s.id} className={styles.srvCard} style={{ animationDelay: `${i * 0.08}s` }}>
+                {/* Image or placeholder */}
+                {s.photo_url ? (
+                  <div className={styles.srvImgWrap}>
+                    <img src={`${API}${s.photo_url}`} alt={s.title} className={styles.srvImg} />
+                    <div className={styles.srvImgOverlay} />
+                  </div>
+                ) : (
+                  <div className={styles.srvPlaceholder}>
+                    <span className={styles.srvPlaceholderNum}>{String(i + 1).padStart(2, '0')}</span>
+                  </div>
+                )}
+                <h3 className={styles.srvTitle}>{s.title}</h3>
+                <p className={styles.srvDesc}>{s.description}</p>
+                <Link to="/contact" className={styles.srvCta}>
+                  Get Started <ArrowRight size={13} />
+                </Link>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ── Why Us ────────────────────────────────────────────── */}
-      <section className={`section ${styles.whySection}`}>
+      {/* ── Automate ─────────────────────────────────────────── */}
+      <section className={styles.automate}>
         <div className="container">
-          <div className={styles.whyGrid}>
+          <div className={styles.autoGrid}>
             <div>
-              <span className="label">Why Choose Us</span>
-              <h2 className="section-title">We Don't Just Code.<br />We Engineer Solutions.</h2>
-              <p className="section-subtitle" style={{ marginBottom: '32px' }}>
-                Every project we take on is treated like our own startup. We care about quality,
-                performance, and delivering real business value.
+              <div className={styles.secLabel}>How We Work</div>
+              <h2 className={styles.secTitle}>Make Your Business<br /><span className={styles.goldText}>Automate & Grow</span></h2>
+              <p className={styles.secSub} style={{ marginBottom: '40px' }}>
+                We turn manual, time-consuming processes into intelligent automated systems that save time and cut costs.
               </p>
-              {[
-                ['Clean, documented, maintainable code', Code2],
-                ['On-time delivery with transparent communication', CheckCircle],
-                ['AI-first approach to problem solving', Brain],
-                ['Scalable architecture from day one', Globe],
-              ].map(([text, Icon]) => (
-                <div key={text} className={styles.whyItem}>
-                  <div className={styles.whyCheck}><Icon size={16} /></div>
-                  <span>{text}</span>
-                </div>
-              ))}
-              <div style={{ marginTop: '40px', display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
-                <Link to="/about" className="btn btn-primary">Learn More <ArrowRight size={16} /></Link>
-                <Link to="/contact" className="btn btn-outline">Hire Us</Link>
+              <div className={styles.autoFeatures}>
+                {AUTO_FEATURES.map(({ Icon, title, desc }) => (
+                  <div key={title} className={styles.autoFeat}>
+                    <div className={styles.autoFeatIcon}><Icon size={18} /></div>
+                    <div>
+                      <div className={styles.autoFeatTitle}>{title}</div>
+                      <div className={styles.autoFeatDesc}>{desc}</div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
-            <div className={styles.whyRight}>
-              <div className={styles.pricingCard}>
-                <div className={styles.pricingHeader}>
-                  <span className="label">Pricing</span>
-                  <div className={styles.price}>$20<span>/hr</span></div>
-                  <p>Starting rate · Transparent pricing</p>
-                </div>
-                <ul className={styles.pricingList}>
-                  {['Free initial consultation', 'Fixed-price projects available', 'Flexible engagement models', 'Money-back guarantee on milestones', '24/7 communication'].map(item => (
-                    <li key={item}><CheckCircle size={14} />{item}</li>
+            <div>
+              <div className={styles.processCard}>
+                <div className={styles.processTitle}>Our Delivery Process</div>
+                <div className={styles.processSteps}>
+                  {PROCESS_STEPS.map(({ num, title, desc }) => (
+                    <div key={num} className={styles.pStep}>
+                      <div className={styles.pNum}>{num}</div>
+                      <div><div className={styles.pStepTitle}>{title}</div><div className={styles.pStepDesc}>{desc}</div></div>
+                    </div>
                   ))}
-                </ul>
-                <Link to="/contact" className="btn btn-primary" style={{ width: '100%', justifyContent: 'center' }}>
-                  Get Free Estimate
-                </Link>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── Testimonials Preview ──────────────────────────────── */}
+      {/* ── Why Us ───────────────────────────────────────────── */}
+      <section className="section">
+        <div className="container">
+          <div className={styles.whyGrid}>
+            <div>
+              <div className={styles.secLabel}>Why Choose Us</div>
+              <h2 className={styles.secTitle}>We Don't Just Code.<br />We Engineer Solutions.</h2>
+              <p className={styles.secSub} style={{ marginBottom: '32px' }}>Every project is treated like our own startup. Quality, performance, and real business value — every time.</p>
+              <div className={styles.whyChecks}>
+                {['Clean, documented, maintainable code — always', 'On-time delivery with full transparent communication', 'AI-first problem solving for maximum efficiency', 'Scalable architecture designed from day one', 'Remote & worldwide — available in your timezone'].map(text => (
+                  <div key={text} className={styles.wcItem}><div className={styles.wcCheck}>✓</div><div className={styles.wcText}>{text}</div></div>
+                ))}
+              </div>
+              <div style={{ marginTop: '36px', display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
+                <Link to="/about" className={styles.btnGold}>About Us →</Link>
+                <Link to="/contact" className={styles.btnGhost}>Hire Us</Link>
+              </div>
+            </div>
+            <div>
+              <div className={styles.priceCard}>
+                <div className={styles.secLabel}>Pricing</div>
+                <div className={styles.priceBig}>$20<span>/hr</span></div>
+                <p className={styles.priceNote}>Starting rate · Transparent pricing · No surprises</p>
+                <div className={styles.priceList}>
+                  {['Free initial consultation', 'Fixed-price projects available', 'Flexible engagement models', 'Money-back guarantee on milestones', '24/7 communication & support'].map(item => (
+                    <div key={item} className={styles.priceItem}><span className={styles.piCheck}>✓</span> {item}</div>
+                  ))}
+                </div>
+                <Link to="/contact" className={styles.btnGold} style={{ width: '100%', justifyContent: 'center' }}>Get Free Estimate →</Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Testimonials ─────────────────────────────────────── */}
       {testimonials.length > 0 && (
-        <section className="section">
+        <section className={`section ${styles.testi}`}>
           <div className="container">
             <div className={styles.sectionHead}>
-              <div>
-                <span className="label">Client Feedback</span>
-                <h2 className="section-title">What Our Clients Say</h2>
-              </div>
-              <Link to="/testimonials" className="btn btn-outline">
-                All Reviews <ArrowRight size={16} />
-              </Link>
+              <div><div className={styles.secLabel}>Client Feedback</div><h2 className={styles.secTitle}>What Our Clients Say</h2></div>
+              <Link to="/testimonials" className={styles.btnGhost}>All Reviews →</Link>
             </div>
-            <div className={styles.testimonialsGrid}>
+            <div className={styles.testiGrid}>
               {testimonials.map(t => (
-                <div key={t.id} className="card">
-                  <div className={styles.stars}>
-                    {Array.from({ length: t.rating }).map((_, i) => (
-                      <Star key={i} size={14} fill="var(--accent-cyan)" color="var(--accent-cyan)" />
-                    ))}
-                  </div>
-                  <p className={styles.testimonialText}>"{t.text}"</p>
-                  <div className={styles.testimonialAuthor}>
-                    <div className={styles.avatar}>{t.avatar}</div>
-                    <div>
-                      <div className={styles.authorName}>{t.name}</div>
-                      <div className={styles.authorRole}>{t.role}</div>
-                    </div>
+                <div key={t.id} className={styles.tc}>
+                  <div className={styles.tcStars}>{[...Array(t.rating)].map((_, i) => <Star key={i} size={13} fill="#F5A623" color="#F5A623" />)}</div>
+                  <p className={styles.tcText}>"{t.text}"</p>
+                  <div className={styles.tcAuthor}>
+                    <div className={styles.tcAv}>{t.avatar}</div>
+                    <div><div className={styles.tcName}>{t.name}</div><div className={styles.tcRole}>{t.role}</div></div>
                   </div>
                 </div>
               ))}
@@ -239,22 +278,19 @@ async def innovate(idea: str):
         </section>
       )}
 
-      {/* ── Final CTA ─────────────────────────────────────────── */}
-      <section className={styles.ctaSection}>
+      {/* ── CTA ──────────────────────────────────────────────── */}
+      <section className={styles.ctaSec}>
         <div className="container">
           <div className={styles.ctaBox}>
             <div className={styles.ctaGlow} />
-            <h2 className={styles.ctaTitle}>Ready to Build Something Amazing?</h2>
-            <p className={styles.ctaDesc}>
-              Let's discuss your project. Free consultation, no commitment.
-            </p>
-            <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <Link to="/contact" className="btn btn-primary">
-                Start a Conversation <ArrowRight size={16} />
-              </Link>
-              <Link to="/services" className="btn btn-outline">
-                View Our Work
-              </Link>
+            <span className={styles.ctaBracketL}>{'{'}</span>
+            <span className={styles.ctaBracketR}>{'}'}</span>
+            <div className={styles.ctaEyebrow}><span className={styles.eyebrowDot} /> Free Consultation Available</div>
+            <h2 className={styles.ctaTitle}>Ready to <em>Automate</em> &<br />Grow Your Business?</h2>
+            <p className={styles.ctaSub}>Let's discuss your project. Free consultation, clear timeline, transparent pricing — no commitment required.</p>
+            <div style={{ display: 'flex', gap: '14px', justifyContent: 'center', flexWrap: 'wrap', position: 'relative' }}>
+              <Link to="/contact" className={styles.btnGold}>Start a Conversation →</Link>
+              <Link to="/services" className={styles.btnGhost}>View Our Services</Link>
             </div>
           </div>
         </div>

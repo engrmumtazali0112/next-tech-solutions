@@ -15,34 +15,47 @@ export default function Testimonials() {
 
   return (
     <div>
-      {/* Hero */}
+
+      {/* ── Hero ── */}
       <section className={styles.hero}>
         <div className={styles.heroBg} />
-        <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-          <span className="label">Social Proof</span>
-          <h1 className="section-title" style={{ marginBottom: '20px' }}>
-            Don't Take Our Word For It
-          </h1>
-          <p className={styles.heroDesc}>
-            Real feedback from real clients across industries. Every review reflects a partnership
-            we're proud of.
-          </p>
-          <div className={styles.overallRating}>
-            <div className={styles.ratingStars}>
-              {Array.from({ length: 5 }).map((_, i) => (
-                <Star key={i} size={24} fill="var(--accent-cyan)" color="var(--accent-cyan)" />
-              ))}
+        <div className={styles.heroLine} />
+        <div className="container">
+          <div className={styles.heroInner}>
+            <div className={styles.heroEyebrow}>
+              <span className={styles.eyebrowDot} />
+              Social Proof
             </div>
-            <div className={styles.ratingText}>
-              <strong>5.0</strong> average rating · <strong>60+</strong> happy clients
+            <h1 className={styles.heroTitle}>
+              Don't Take Our<br />
+              <span className={styles.gold}>Word For It</span>
+            </h1>
+            <p className={styles.heroDesc}>
+              Real feedback from real clients across industries. Every review reflects a
+              partnership we're proud of.
+            </p>
+            <div className={styles.overallRating}>
+              <div className={styles.ratingStars}>
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <Star key={i} size={22} fill="#F5A623" color="#F5A623" />
+                ))}
+              </div>
+              <div className={styles.ratingText}>
+                <strong>5.0</strong> average rating · <strong>60+</strong> happy clients
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Testimonials Grid */}
-      <section className="section">
+      {/* ── Testimonials Grid ── */}
+      <section className={styles.testiSection}>
         <div className="container">
+          <div className={styles.sectionHead}>
+            <div className={styles.secLabel}>Client Feedback</div>
+            <h2 className={styles.secTitle}>What Our Clients Say</h2>
+            <p>Real results, real people, real partnerships across the globe.</p>
+          </div>
           {loading ? (
             <div className={styles.loading}><div className={styles.spinner} /></div>
           ) : (
@@ -56,7 +69,7 @@ export default function Testimonials() {
                   <Quote size={28} className={styles.quoteIcon} />
                   <div className={styles.stars}>
                     {Array.from({ length: t.rating }).map((_, j) => (
-                      <Star key={j} size={14} fill="var(--accent-cyan)" color="var(--accent-cyan)" />
+                      <Star key={j} size={14} fill="#F5A623" color="#F5A623" />
                     ))}
                   </div>
                   <p className={styles.text}>"{t.text}"</p>
@@ -75,7 +88,7 @@ export default function Testimonials() {
         </div>
       </section>
 
-      {/* Logos / Trust indicators */}
+      {/* ── Industry Tags ── */}
       <section className={styles.trustSection}>
         <div className="container">
           <p className={styles.trustLabel}>Clients we've worked with across industries</p>
@@ -87,24 +100,27 @@ export default function Testimonials() {
         </div>
       </section>
 
-      {/* Leave a Review CTA */}
+      {/* ── CTA ── */}
       <section className={styles.ctaSection}>
         <div className="container">
           <div className={styles.ctaBox}>
             <div className={styles.ctaGlow} />
             <h2 className={styles.ctaTitle}>Worked With Us?</h2>
-            <p className={styles.ctaDesc}>We'd love to hear your feedback. Share your experience and help others make the right choice.</p>
+            <p className={styles.ctaDesc}>
+              We'd love to hear your feedback. Share your experience and help others make the right choice.
+            </p>
             <a
               href="https://linkedin.com/company/104945423"
               target="_blank"
               rel="noreferrer"
-              className="btn btn-primary"
+              className={styles.btnGold}
             >
-              Leave a Review on LinkedIn
+              Leave a Review on LinkedIn →
             </a>
           </div>
         </div>
       </section>
+
     </div>
   )
 }
