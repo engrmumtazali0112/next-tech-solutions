@@ -1,6 +1,5 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.middleware.trustedhost import TrustedHostMiddleware
 from contextlib import asynccontextmanager
 
 from app.core.config import settings
@@ -14,11 +13,11 @@ from app.routers.services import router as services_router
 async def lifespan(app: FastAPI):
     # Startup: create database tables
     Base.metadata.create_all(bind=engine)
-    print(f"✅ {settings.APP_NAME} API started")
-    print(f"📖 Docs available at: http://localhost:8000/docs")
+    print(f"{settings.APP_NAME} API started")
+    print("Docs available at: http://localhost:8000/docs")
     yield
     # Shutdown
-    print("👋 API shutting down")
+    print("API shutting down")
 
 
 app = FastAPI(
@@ -30,7 +29,7 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
-# ── Middleware ──────────────────────────────────────────────
+# Middleware
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.allowed_origins_list,
@@ -39,14 +38,14 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# ── Routers ─────────────────────────────────────────────────
+# Routers
 app.include_router(contact_router, prefix="/api/v1")
 app.include_router(newsletter_router, prefix="/api/v1")
 app.include_router(services_router, prefix="/api/v1")
 
 
-# ── Health Check ─────────────────────────────────────────────
-@app.get("/", tags=["Health"])
+# Health Check
+@app.get("/")
 async def root():
     return {
         "app": settings.APP_NAME,
@@ -56,6 +55,6 @@ async def root():
     }
 
 
-@app.get("/health", tags=["Health"])
+@app.get("/health")
 async def health_check():
     return {"status": "healthy", "version": settings.APP_VERSION}

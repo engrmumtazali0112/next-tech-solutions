@@ -18,3 +18,5 @@ frontend/.env
 .DS_Store
 Thumbs.db
 EOF
+.vercel
+.env*.local
