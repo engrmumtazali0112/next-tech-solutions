@@ -1,37 +1,41 @@
 <div align="center">
 
-<!-- Animated Header Banner -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=F5A623&height=200&section=header&text=Next%20Tech%20Solutions&fontSize=52&fontColor=000000&fontAlignY=38&desc=Intelligent%20Full-Stack%20%7C%20AI-Powered%20%7C%20Cloud-Native&descAlignY=58&descSize=18&animation=fadeIn" width="100%" />
+<!-- Animated Header -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=220&section=header&text=AXON%20FORGE&fontSize=72&fontColor=F5A623&fontAlignY=40&desc=Intelligent%20Full-Stack%20·%20AI-Powered%20·%20Cloud-Native&descAlignY=62&descSize=17&animation=fadeIn&stroke=F5A623&strokeWidth=1" width="100%" />
 
-<!-- Logo -->
+<!-- Logo ASCII Art -->
 <br/>
 
 ```
-  ╔══════════════════════════════════════════════╗
-  ║          { }  NEXT TECH SOLUTIONS            ║
-  ║   Automate · Scale · Innovate · Deliver      ║
-  ╚══════════════════════════════════════════════╝
+  ╔════════════════════════════════════════════════════════╗
+  ║                                                        ║
+  ║    ──────╮   ╭──────    AXON  ◈  FORGE                ║
+  ║          │   │          ─────────────────              ║
+  ║    ──────╯   ╰──────    Automate · Scale · Deliver     ║
+  ║                                                        ║
+  ╚════════════════════════════════════════════════════════╝
 ```
 
-<!-- Animated Typing -->
+<!-- Typing Animation -->
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=F5A623&center=true&vCenter=true&width=600&lines=Full-Stack+AI+%2F+ML+Engineering;SaaS+Platform+Development;Cloud+%26+DevOps+Solutions;React+%7C+FastAPI+%7C+Django+%7C+AWS;Building+What+You're+Proud+To+Use" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&pause=1200&color=F5A623&center=true&vCenter=true&width=650&lines=Full-Stack+AI+%2F+ML+Engineering;SaaS+Platform+Development;Cloud+%26+DevOps+Solutions;React+%7C+FastAPI+%7C+Django+%7C+AWS;Building+What+You%27re+Proud+To+Use+%F0%9F%9A%80" alt="Typing SVG" />
 </a>
 
 <br/><br/>
 
 <!-- Status Badges -->
-[![Available for Projects](https://img.shields.io/badge/🟢_Status-Available_for_Projects-F5A623?style=for-the-badge&labelColor=000000)](mailto:engrmumtazali01@gmail.com)
-[![Rate](https://img.shields.io/badge/💰_Rate-Starting_at_$20/hr-F5A623?style=for-the-badge&labelColor=000000)](mailto:engrmumtazali01@gmail.com)
-[![Response](https://img.shields.io/badge/⚡_Response-Within_24_Hours-F5A623?style=for-the-badge&labelColor=000000)](mailto:engrmumtazali01@gmail.com)
+[![Available](https://img.shields.io/badge/🟢_Status-Available_for_Projects-F5A623?style=for-the-badge&labelColor=0a0a0a)](mailto:engrmumtazali01@gmail.com)
+[![Rate](https://img.shields.io/badge/💰_Rate-$20_/_hr-F5A623?style=for-the-badge&labelColor=0a0a0a)](mailto:engrmumtazali01@gmail.com)
+[![Response](https://img.shields.io/badge/⚡_Reply-Within_24h-F5A623?style=for-the-badge&labelColor=0a0a0a)](mailto:engrmumtazali01@gmail.com)
 
 <br/>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-nexttech--sol-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/nexttech-sol)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-axonforge-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/nexttech-sol)
 [![Email](https://img.shields.io/badge/Email-engrmumtazali01%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:engrmumtazali01@gmail.com)
-[![Location](https://img.shields.io/badge/📍-Lahore,_Pakistan_·_Remote-333333?style=flat-square)](https://maps.google.com)
-[![Projects](https://img.shields.io/badge/🚀_Projects-85+-F5A623?style=flat-square&labelColor=111111)](https://linkedin.com/in/nexttech-sol)
-[![Clients](https://img.shields.io/badge/🤝_Clients-60+-F5A623?style=flat-square&labelColor=111111)](https://linkedin.com/in/nexttech-sol)
+[![Location](https://img.shields.io/badge/📍-Lahore,_Pakistan_·_Remote-F5A623?style=flat-square&labelColor=0a0a0a)](https://maps.google.com)
+[![Projects](https://img.shields.io/badge/🚀_Projects-85+-F5A623?style=flat-square&labelColor=0a0a0a)](https://linkedin.com/in/nexttech-sol)
+[![Clients](https://img.shields.io/badge/🤝_Clients-60+-F5A623?style=flat-square&labelColor=0a0a0a)](https://linkedin.com/in/nexttech-sol)
+[![Live Demo](https://img.shields.io/badge/▲_Live_Demo-axonforge.vercel.app-000000?style=flat-square&logo=vercel&logoColor=white)](https://axonforge.vercel.app)
 
 </div>
 
@@ -40,13 +44,14 @@
 ## 📋 Table of Contents
 
 <details>
-<summary><b>Click to expand navigation</b></summary>
+<summary><b>🗂 Click to expand navigation</b></summary>
 
-- [🏢 About Next Tech Solutions](#-about-next-tech-solutions)
+- [🏢 About Axon Forge](#-about-axon-forge)
 - [🛠 Tech Stack](#-tech-stack)
 - [📦 Project Structure](#-project-structure)
 - [⚙️ Backend Setup (FastAPI)](#️-backend-setup-fastapi)
 - [⚛️ Frontend Setup (React + Vite)](#️-frontend-setup-react--vite)
+- [▲ Deploy to Vercel](#-deploy-to-vercel)
 - [🌐 API Reference](#-api-reference)
 - [🗄️ Database Models](#️-database-models)
 - [📡 Environment Variables](#-environment-variables)
@@ -59,38 +64,44 @@
 
 ---
 
-## 🏢 About Next Tech Solutions
+## 🏢 About Axon Forge
 
 <table>
 <tr>
-<td width="60%">
+<td width="58%">
 
-**Next Tech Solutions** is a remote-first software development agency founded in 2019, specializing in **intelligent full-stack solutions**. We bridge the gap between cutting-edge AI technology and real-world business needs.
+**Axon Forge** is a remote-first software development agency founded in 2019, specializing in **intelligent full-stack solutions**. We bridge the gap between cutting-edge AI technology and real-world business needs.
 
 > *"Build software you'd be proud to use yourself."*
 
 **Our journey:**
-- 🏁 **2019** — Started as a freelance Django consultancy
-- 🚀 **2020** — Launched first full SaaS product for a US startup
-- 👥 **2021** — Grew to a 4-person specialized team
-- 🤖 **2022** — Added AI/ML services as LLMs went mainstream
-- 🎯 **2023** — Crossed 50+ successful project deliveries
-- 📈 **2024** — 700+ LinkedIn followers & growing community
+
+| Year | Milestone |
+|------|-----------|
+| 🏁 **2019** | Started as a freelance Django consultancy |
+| 🚀 **2020** | Launched first full SaaS product for a US startup |
+| 👥 **2021** | Grew to a 4-person specialized team |
+| 🤖 **2022** | Added AI/ML services as LLMs went mainstream |
+| 🎯 **2023** | Crossed 50+ successful project deliveries |
+| 📈 **2024** | 700+ LinkedIn followers & growing community |
 
 </td>
-<td width="40%" align="center">
+<td width="42%" align="center">
 
 ```
-  ┌─────────────────────┐
-  │   BY THE NUMBERS    │
-  ├─────────────────────┤
-  │  85+  Projects      │
-  │  60+  Happy Clients │
-  │   5yr In Business   │
-  │   4   Continents    │
-  │  5.0★ Avg Rating    │
-  └─────────────────────┘
+  ┌──────────────────────────┐
+  │      BY THE NUMBERS      │
+  ├──────────────────────────┤
+  │  🚀  85+   Projects      │
+  │  🤝  60+   Happy Clients │
+  │  📅   5yr  In Business   │
+  │  🌍   4    Continents    │
+  │  ⭐  5.0★  Avg Rating    │
+  │  ⚡  24h   Response Time │
+  └──────────────────────────┘
 ```
+
+[![Live on Vercel](https://img.shields.io/badge/▲_Deployed_on-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://axonforge.vercel.app)
 
 </td>
 </tr>
@@ -121,7 +132,6 @@
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
 
 ### Cloud & DevOps
 ![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
@@ -129,6 +139,7 @@
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
 ### AI & Machine Learning
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
@@ -147,66 +158,62 @@
 ## 📦 Project Structure
 
 ```
-next-tech-solutions/
+axon-forge/
 │
-├── 📁 backend/                     # FastAPI Backend
+├── 📁 backend/                        # FastAPI Backend
 │   ├── 📁 app/
-│   │   ├── 📁 core/                # Configuration & Database
-│   │   │   ├── ⚙️  config.py       # Settings (Pydantic BaseSettings)
-│   │   │   └── 🗄️  database.py     # SQLAlchemy engine & session
+│   │   ├── 📁 core/
+│   │   │   ├── ⚙️  config.py          # Pydantic BaseSettings
+│   │   │   └── 🗄️  database.py        # SQLAlchemy engine & session
 │   │   │
-│   │   ├── 📁 models/              # SQLAlchemy ORM Models
-│   │   │   ├── 📋 contact.py       # ContactMessage model
-│   │   │   ├── 📰 blog.py          # BlogPost model
-│   │   │   ├── ⭐ feature.py       # Feature model
-│   │   │   ├── 🔧 service.py       # Service model
-│   │   │   └── 🔄 how_we_work.py   # Process Steps model
+│   │   ├── 📁 models/                 # SQLAlchemy ORM Models
+│   │   │   ├── contact.py
+│   │   │   ├── blog.py
+│   │   │   ├── service.py
+│   │   │   └── how_we_work.py
 │   │   │
-│   │   ├── 📁 schemas/             # Pydantic Request / Response
-│   │   │   ├── 📋 contact.py       # ContactForm schemas
-│   │   │   ├── 📰 blog.py          # Blog CRUD schemas
-│   │   │   ├── ⭐ feature.py       # Feature schemas
-│   │   │   ├── 🔧 service.py       # Service schemas
-│   │   │   └── 🔄 how_we_work.py   # HowWeWork schemas
+│   │   ├── 📁 schemas/                # Pydantic Schemas
+│   │   │   ├── contact.py
+│   │   │   ├── blog.py
+│   │   │   └── service.py
 │   │   │
-│   │   ├── 📁 routers/             # API Route Handlers
-│   │   │   ├── 📋 contact.py       # POST /api/v1/contact/
-│   │   │   ├── 📰 blog.py          # CRUD /api/v1/blog/
-│   │   │   ├── 🔧 services.py      # GET  /api/v1/services/
-│   │   │   └── 📨 newsletter.py    # POST /api/v1/newsletter/
+│   │   ├── 📁 routers/                # Route Handlers
+│   │   │   ├── contact.py             # POST /api/v1/contact/
+│   │   │   ├── blog.py                # CRUD /api/v1/blog/
+│   │   │   ├── services.py            # GET  /api/v1/services/
+│   │   │   └── newsletter.py          # POST /api/v1/newsletter/
 │   │   │
-│   │   └── 📁 services/            # Business Logic Layer
+│   │   └── 📁 services/               # Business Logic
 │   │       ├── contact_service.py
 │   │       └── newsletter_service.py
 │   │
-│   ├── 🚀 main.py                  # FastAPI app entry point
+│   ├── 🚀 main.py                     # FastAPI entry point
 │   ├── 📄 requirements.txt
-│   └── 🔒 .env                     # Environment variables
+│   └── 🔒 .env                        # Environment variables
 │
-└── 📁 frontend/                    # React + Vite Frontend
-    ├── 📁 src/
-    │   ├── 📁 components/
-    │   │   ├── 🧭 Navbar.jsx        # Animated sticky navbar
-    │   │   └── 🦶 Footer.jsx        # Full-featured footer
-    │   │
-    │   ├── 📁 pages/
-    │   │   ├── 🏠 Home.jsx          # Landing page with hero
-    │   │   ├── ℹ️  About.jsx         # Company story & values
-    │   │   ├── 🔧 Services.jsx      # Services grid
-    │   │   ├── 👥 Team.jsx          # Team members
-    │   │   ├── ⭐ Testimonials.jsx  # Client reviews
-    │   │   └── 📞 Contact.jsx       # EmailJS contact form
-    │   │
-    │   ├── 📁 utils/
-    │   │   └── 🔌 api.js            # Axios instance
-    │   │
-    │   ├── 🎨 index.css             # Gold & Black design system
-    │   ├── 🚀 main.jsx              # React entry point
-    │   └── 📱 App.jsx               # Router setup
-    │
-    ├── 📄 index.html
-    ├── ⚡ vite.config.js
-    └── 📦 package.json
+├── 📁 frontend/                       # React + Vite Frontend
+│   ├── 📁 src/
+│   │   ├── 📁 components/
+│   │   │   ├── 🧭 Navbar.jsx          # Sticky animated navbar
+│   │   │   └── 🦶 Footer.jsx          # Full-featured footer
+│   │   │
+│   │   ├── 📁 pages/
+│   │   │   ├── 🏠 Home.jsx
+│   │   │   ├── ℹ️  About.jsx
+│   │   │   ├── 🔧 Services.jsx
+│   │   │   ├── 👥 Team.jsx
+│   │   │   ├── ⭐ Testimonials.jsx
+│   │   │   └── 📞 Contact.jsx
+│   │   │
+│   │   ├── 🎨 index.css               # Gold & Black design system
+│   │   ├── 🚀 main.jsx
+│   │   └── 📱 App.jsx
+│   │
+│   ├── 📄 index.html
+│   ├── ⚡ vite.config.js
+│   └── 📦 package.json
+│
+└── ▲ vercel.json                      # Vercel deployment config
 ```
 
 ---
@@ -215,27 +222,26 @@ next-tech-solutions/
 
 ### Prerequisites
 
-```bash
+```
 Python 3.10+    MySQL 8.0+    pip
 ```
 
 ### 1️⃣ Clone & Navigate
 
 ```bash
-git clone https://github.com/yourusername/next-tech-solutions.git
+git clone https://github.com/engrmumtazali0112/next-tech-solutions.git
 cd next-tech-solutions/backend
 ```
 
-### 2️⃣ Create Virtual Environment
+### 2️⃣ Virtual Environment
 
 ```bash
-# Create
 python3 -m venv venv
 
-# Activate (Linux / macOS)
+# Linux / macOS
 source venv/bin/activate
 
-# Activate (Windows)
+# Windows
 venv\Scripts\activate
 ```
 
@@ -249,17 +255,17 @@ pip install -r requirements.txt
 
 ```bash
 cp .env.example .env
-# Edit .env with your settings (see Environment Variables section)
+# Edit .env (see Environment Variables section below)
 ```
 
-### 5️⃣ Setup Database
+### 5️⃣ Database Setup
 
 ```sql
--- In MySQL shell:
-CREATE DATABASE itservices_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+-- MySQL shell:
+CREATE DATABASE axonforge_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
 
-### 6️⃣ Run Development Server
+### 6️⃣ Run Dev Server
 
 ```bash
 uvicorn main:app --reload --port 8000
@@ -282,45 +288,113 @@ uvicorn main:app --reload --port 8000
 
 ### Prerequisites
 
-```bash
+```
 Node.js 18+    npm 9+
 ```
 
-### 1️⃣ Navigate to Frontend
+### 1️⃣ Navigate & Install
 
 ```bash
 cd next-tech-solutions/frontend
-```
-
-### 2️⃣ Install Dependencies
-
-```bash
 npm install
 ```
 
-### 3️⃣ Configure Environment
+### 2️⃣ Configure Environment
 
 ```bash
-# Create .env.local
 cp .env.example .env.local
 # Set VITE_API_URL=http://localhost:8000
 ```
 
-### 4️⃣ Run Development Server
+### 3️⃣ Run Dev Server
 
 ```bash
 npm run dev
+# → http://localhost:5173
 ```
 
 <div align="center">
 
-| Script | Command | Description |
-|--------|---------|-------------|
-| Development | `npm run dev` | Start dev server at `localhost:5173` |
-| Build | `npm run build` | Production bundle to `dist/` |
+| Script | Command | Result |
+|--------|---------|--------|
+| Development | `npm run dev` | `localhost:5173` |
+| Build | `npm run build` | `dist/` folder |
 | Preview | `npm run preview` | Preview production build |
 
 </div>
+
+---
+
+## ▲ Deploy to Vercel
+
+> **Frontend is deployed on Vercel for zero-config, instant global delivery.**
+
+### Option A — One-Click Deploy
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/engrmumtazali0112/next-tech-solutions&root=frontend&framework=vite&env=VITE_API_URL,VITE_EMAILJS_SERVICE_ID,VITE_EMAILJS_TEMPLATE_ID,VITE_EMAILJS_PUBLIC_KEY&envDescription=Required%20environment%20variables%20for%20Axon%20Forge)
+
+### Option B — Vercel CLI
+
+```bash
+# Install Vercel CLI globally
+npm i -g vercel
+
+# Navigate to frontend
+cd frontend
+
+# Login & deploy
+vercel login
+vercel --prod
+```
+
+### Option C — GitHub Integration (Recommended)
+
+```
+1. Push this repo to GitHub
+2. Go to vercel.com/new
+3. Import → select "next-tech-solutions"
+4. Set Root Directory → frontend
+5. Framework Preset → Vite (auto-detected)
+6. Add Environment Variables (see below)
+7. Click Deploy ✅
+```
+
+### `vercel.json` — Already configured at repo root:
+
+```json
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "frontend/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "dist" }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/frontend/$1"
+    }
+  ],
+  "env": {
+    "VITE_API_URL": "@vite_api_url"
+  }
+}
+```
+
+### Vercel Environment Variables
+
+Add these in your Vercel project dashboard under **Settings → Environment Variables**:
+
+| Variable | Description | Example |
+|----------|-------------|---------|
+| `VITE_API_URL` | Backend API base URL | `https://your-api.railway.app` |
+| `VITE_EMAILJS_SERVICE_ID` | EmailJS service ID | `svc_xxxxxxx` |
+| `VITE_EMAILJS_TEMPLATE_ID` | EmailJS template ID | `template_xxxxxxx` |
+| `VITE_EMAILJS_PUBLIC_KEY` | EmailJS public key | `xxxxxxxxxxxxxxx` |
+
+> 💡 **Tip:** For the backend, deploy to [Railway](https://railway.app) or [Render](https://render.com) — both have free tiers and PostgreSQL support.
 
 ---
 
@@ -334,7 +408,7 @@ npm run dev
 |--------|----------|-------------|------|
 | `GET` | `/api/v1/services/` | List all active services | ❌ |
 | `GET` | `/api/v1/services/{id}` | Get service by ID | ❌ |
-| `POST` | `/api/v1/services/` | Create new service | 🔒 |
+| `POST` | `/api/v1/services/` | Create service | 🔒 |
 | `PUT` | `/api/v1/services/{id}` | Update service | 🔒 |
 | `DELETE` | `/api/v1/services/{id}` | Delete service | 🔒 |
 
@@ -350,7 +424,7 @@ npm run dev
 
 | Method | Endpoint | Description | Auth |
 |--------|----------|-------------|------|
-| `POST` | `/api/v1/newsletter/subscribe` | Subscribe to newsletter | ❌ |
+| `POST` | `/api/v1/newsletter/subscribe` | Subscribe | ❌ |
 | `POST` | `/api/v1/newsletter/unsubscribe` | Unsubscribe | ❌ |
 
 ### 📰 Blog
@@ -359,7 +433,7 @@ npm run dev
 |--------|----------|-------------|------|
 | `GET` | `/api/v1/blog/` | List published posts | ❌ |
 | `GET` | `/api/v1/blog/{slug}` | Get post by slug | ❌ |
-| `POST` | `/api/v1/blog/` | Create blog post | 🔒 |
+| `POST` | `/api/v1/blog/` | Create post | 🔒 |
 | `PUT` | `/api/v1/blog/{id}` | Update post | 🔒 |
 
 </div>
@@ -367,8 +441,7 @@ npm run dev
 ### Example Request & Response
 
 ```bash
-# Submit Contact Form
-curl -X POST http://localhost:8000/api/v1/contact/ \
+curl -X POST https://your-api.railway.app/api/v1/contact/ \
   -H "Content-Type: application/json" \
   -d '{
     "name": "John Doe",
@@ -380,12 +453,11 @@ curl -X POST http://localhost:8000/api/v1/contact/ \
 ```
 
 ```json
-// Response 201 Created
 {
   "id": 42,
   "status": "received",
   "message": "Thanks John! We'll reply within 24 hours.",
-  "created_at": "2024-11-20T10:30:00Z"
+  "created_at": "2025-01-20T10:30:00Z"
 }
 ```
 
@@ -423,7 +495,7 @@ class Service(Base):
     description       = Column(Text)
     short_description = Column(String(500))
     icon              = Column(String(100))
-    features          = Column(Text)        # JSON array
+    features          = Column(Text)         # JSON array
     price_range       = Column(String(50))
     color_theme       = Column(String(30), default="gold")
     order_index       = Column(Integer, default=0)
@@ -459,37 +531,37 @@ class BlogPost(Base):
 
 ## 📡 Environment Variables
 
-Create a `.env` file in the `/backend` directory:
+**Backend** — create `/backend/.env`:
 
 ```env
-# ─── App ────────────────────────────────────────────────────
-APP_NAME=Next Tech Solutions
+# ── App ──────────────────────────────────────────────────
+APP_NAME=Axon Forge
 APP_VERSION=1.0.0
 DEBUG=True
 ENVIRONMENT=development
 SECRET_KEY=your-super-secret-key-change-in-production
 
-# ─── Database ───────────────────────────────────────────────
-DATABASE_URL=mysql+pymysql://root:yourpassword@localhost:3306/itservices_db
+# ── Database ─────────────────────────────────────────────
+DATABASE_URL=mysql+pymysql://root:yourpassword@localhost:3306/axonforge_db
 
-# ─── CORS ───────────────────────────────────────────────────
-ALLOWED_ORIGINS=["http://localhost:5173","http://localhost:3000"]
+# ── CORS ─────────────────────────────────────────────────
+ALLOWED_ORIGINS=["http://localhost:5173","https://axonforge.vercel.app"]
 
-# ─── Email (SMTP) ───────────────────────────────────────────
+# ── Email (SMTP) ──────────────────────────────────────────
 SMTP_HOST=smtp.gmail.com
 SMTP_PORT=587
 SMTP_USERNAME=your-email@gmail.com
 SMTP_PASSWORD=your-app-password
 EMAIL_FROM=your-email@gmail.com
-EMAIL_TO=contact@nexttech.dev
+EMAIL_TO=engrmumtazali01@gmail.com
 
-# ─── File Uploads ───────────────────────────────────────────
+# ── File Uploads ──────────────────────────────────────────
 UPLOAD_DIR=media/uploads
 MAX_FILE_SIZE_MB=5
 ALLOWED_IMAGE_TYPES=image/jpeg,image/png,image/webp
 ```
 
-Create a `.env.local` file in the `/frontend` directory:
+**Frontend** — create `/frontend/.env.local`:
 
 ```env
 VITE_API_URL=http://localhost:8000
@@ -498,58 +570,50 @@ VITE_EMAILJS_TEMPLATE_ID=your_template_id
 VITE_EMAILJS_PUBLIC_KEY=your_public_key
 ```
 
-> ⚠️ **Never commit `.env` files to version control. Always use `.env.example` as a template.**
+> ⚠️ **Never commit `.env` files. Always add them to `.gitignore`.**
 
 ---
 
 ## 🚀 Production Deployment
 
-### Backend (FastAPI)
+### Backend — Railway / Render
 
 ```bash
-# Install production server
-pip install gunicorn
+# Option 1: Railway (recommended)
+railway login
+railway init
+railway up
 
-# Run with Gunicorn + Uvicorn workers
+# Option 2: Docker
+docker build -t axonforge-api .
+docker run -p 8000:8000 --env-file .env axonforge-api
+
+# Option 3: Gunicorn (VPS)
 gunicorn main:app \
   --workers 4 \
   --worker-class uvicorn.workers.UvicornWorker \
   --bind 0.0.0.0:8000 \
   --timeout 120
-
-# Or with Docker
-docker build -t nexttech-api .
-docker run -p 8000:8000 --env-file .env nexttech-api
 ```
 
-### Frontend (React + Vite)
+### Frontend — Vercel
 
 ```bash
-# Build for production
-npm run build
-
-# Preview locally
-npm run preview
-
-# Deploy dist/ to Vercel
-npx vercel deploy --prod
-
-# Or Netlify
-netlify deploy --prod --dir=dist
+cd frontend
+npm run build       # Generate dist/
+vercel --prod       # Deploy to Vercel
 ```
-
-### Recommended Stack
 
 <div align="center">
 
 | Layer | Development | Production |
-|-------|------------|------------|
-| Backend | `uvicorn --reload` | Gunicorn + Nginx |
-| Frontend | `vite dev` | Vercel / Netlify |
-| Database | SQLite | MySQL / PostgreSQL |
-| Cache | — | Redis |
-| CDN | — | Cloudflare |
-| CI/CD | — | GitHub Actions |
+|-------|-------------|------------|
+| **Frontend** | `vite dev` | **Vercel** ▲ |
+| **Backend** | `uvicorn --reload` | Railway / Render |
+| **Database** | MySQL local | Railway MySQL / PlanetScale |
+| **Cache** | — | Redis (Railway) |
+| **CDN** | — | Cloudflare / Vercel Edge |
+| **CI/CD** | — | GitHub Actions + Vercel |
 
 </div>
 
@@ -560,15 +624,15 @@ netlify deploy --prod --dir=dist
 <div align="center">
 
 | 🔧 Service | 📝 Description | 💰 Starting |
-|-----------|----------------|------------|
-| **SaaS Development** | Full-cycle SaaS platforms with auth, billing & dashboards | $20/hr |
+|-----------|----------------|-------------|
+| **SaaS Development** | Full-cycle platforms with auth, billing & dashboards | $20/hr |
 | **AI & ML Solutions** | LLM integration, RAG systems, fine-tuning & pipelines | $20/hr |
 | **Web Development** | Responsive React / Next.js apps with pixel-perfect UI | $20/hr |
 | **Mobile Apps** | Cross-platform React Native & Expo applications | $20/hr |
 | **Cloud & DevOps** | AWS / GCP infrastructure, Docker, CI/CD pipelines | $20/hr |
 | **Computer Vision** | Object detection, image classification & OCR systems | $20/hr |
-| **LLM Fine-tuning** | Custom model training on your domain-specific data | Custom |
-| **Database Design** | Scalable schemas, optimization & migration strategies | $20/hr |
+| **LLM Fine-tuning** | Custom model training on domain-specific data | Custom |
+| **Database Design** | Scalable schemas, optimization & migrations | $20/hr |
 
 </div>
 
@@ -577,20 +641,20 @@ netlify deploy --prod --dir=dist
 ## 📈 Why Choose Us
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                                                                 │
-│  ✅  Clean, documented, maintainable code — always             │
-│  ✅  On-time delivery with full transparent communication       │
-│  ✅  AI-first problem solving for maximum efficiency           │
-│  ✅  Scalable architecture designed from day one               │
-│  ✅  Free initial consultation — no commitment required        │
-│  ✅  Fixed-price & hourly engagement models available          │
-│  ✅  Post-launch support included with every project           │
-│  ✅  NDA available before any project discussion               │
-│  ✅  Remote-first — available across all timezones             │
-│  ✅  100% client satisfaction — 5.0★ average rating           │
-│                                                                 │
-└─────────────────────────────────────────────────────────────────┘
+  ┌─────────────────────────────────────────────────────────────────────┐
+  │                                                                     │
+  │   ✅  Clean, documented, maintainable code — always                │
+  │   ✅  On-time delivery with full transparent communication          │
+  │   ✅  AI-first problem solving for maximum efficiency              │
+  │   ✅  Scalable architecture designed from day one                  │
+  │   ✅  Free initial consultation — no commitment required           │
+  │   ✅  Fixed-price & hourly engagement models available             │
+  │   ✅  Post-launch support included with every project              │
+  │   ✅  NDA available before any project discussion                  │
+  │   ✅  Remote-first — available across all timezones               │
+  │   ✅  100% client satisfaction — 5.0★ average rating              │
+  │                                                                     │
+  └─────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -598,13 +662,13 @@ netlify deploy --prod --dir=dist
 ## 🔄 Development Process
 
 ```
-  ┌──────────┐     ┌───────────┐     ┌───────────┐     ┌──────────┐     ┌──────────┐
-  │    01    │────▶│    02     │────▶│    03     │────▶│    04    │────▶│    05    │
-  │Discovery │     │ Proposal  │     │  Design & │     │  Test &  │     │ Support  │
-  │   Call   │     │& Planning │     │  Develop  │     │  Deploy  │     │ & Scale  │
-  └──────────┘     └───────────┘     └───────────┘     └──────────┘     └──────────┘
-  Free 1hr call    Scope & quote     Agile sprints      QA & cloud       Post-launch
-                   within 24hrs      weekly demos       deployment       monitoring
+  ┌───────────┐    ┌───────────┐    ┌───────────┐    ┌───────────┐    ┌───────────┐
+  │    01     │───▶│    02     │───▶│    03     │───▶│    04     │───▶│    05     │
+  │ Discovery │    │ Proposal  │    │ Design &  │    │  Test &   │    │ Support & │
+  │   Call   │    │& Planning │    │ Develop   │    │  Deploy   │    │   Scale   │
+  └───────────┘    └───────────┘    └───────────┘    └───────────┘    └───────────┘
+  Free 30-min      Scope & quote    Agile sprints    QA + Vercel      Post-launch
+  consultation     within 24hrs     weekly demos     deployment       monitoring
 ```
 
 ---
@@ -615,17 +679,19 @@ netlify deploy --prod --dir=dist
 
 ### Ready to Build Something Amazing?
 
-[![Email](https://img.shields.io/badge/📧_Email-engrmumtazali01%40gmail.com-F5A623?style=for-the-badge&labelColor=111111)](mailto:engrmumtazali01@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/💼_LinkedIn-nexttech--sol-F5A623?style=for-the-badge&labelColor=111111)](https://linkedin.com/in/nexttech-sol)
-[![Book a Call](https://img.shields.io/badge/📅_Book-Free_Consultation-F5A623?style=for-the-badge&labelColor=111111)](mailto:engrmumtazali01@gmail.com?subject=Free%20Consultation%20Request)
+[![Email](https://img.shields.io/badge/📧_Email-engrmumtazali01%40gmail.com-F5A623?style=for-the-badge&labelColor=0a0a0a)](mailto:engrmumtazali01@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/💼_LinkedIn-axonforge-F5A623?style=for-the-badge&labelColor=0a0a0a)](https://linkedin.com/in/nexttech-sol)
+[![Book a Call](https://img.shields.io/badge/📅_Book-Free_Consultation-F5A623?style=for-the-badge&labelColor=0a0a0a)](mailto:engrmumtazali01@gmail.com?subject=Free%20Consultation%20Request)
+[![Live Site](https://img.shields.io/badge/▲_Visit-axonforge.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://axonforge.vercel.app)
 
 <br/>
 
 ```
-📍  Lahore, Pakistan  ·  Remote Worldwide
-💰  Starting at $20 / hr
-⚡  Response within 24 hours
-🔒  NDA available on request
+  📍  Lahore, Pakistan  ·  Remote Worldwide
+  💰  Starting at $20 / hr
+  ⚡  Response within 24 hours
+  🔒  NDA available on request
+  ▲   Live on Vercel — axonforge.vercel.app
 ```
 
 </div>
@@ -634,21 +700,20 @@ netlify deploy --prod --dir=dist
 
 <div align="center">
 
-<!-- Stats Cards Row -->
-![Projects](https://img.shields.io/badge/Projects_Delivered-85+-F5A623?style=flat-square&labelColor=111111)
-![Clients](https://img.shields.io/badge/Happy_Clients-60+-F5A623?style=flat-square&labelColor=111111)
-![Rating](https://img.shields.io/badge/Rating-5.0★-F5A623?style=flat-square&labelColor=111111)
-![Years](https://img.shields.io/badge/In_Business-5+_Years-F5A623?style=flat-square&labelColor=111111)
+![Projects](https://img.shields.io/badge/Projects_Delivered-85+-F5A623?style=flat-square&labelColor=0a0a0a)
+![Clients](https://img.shields.io/badge/Happy_Clients-60+-F5A623?style=flat-square&labelColor=0a0a0a)
+![Rating](https://img.shields.io/badge/Rating-5.0★-F5A623?style=flat-square&labelColor=0a0a0a)
+![Years](https://img.shields.io/badge/In_Business-5+_Years-F5A623?style=flat-square&labelColor=0a0a0a)
+![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
 
 <br/>
 
-**© 2024 Next Tech Solutions. Built with ❤️ and ☕ in Lahore, Pakistan.**
+**© 2025 Axon Forge. Built with ❤️ and ☕ in Lahore, Pakistan.**
 
 *Clean code. Real results. Every time.*
 
 <br/>
 
-<!-- Footer Wave -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=F5A623&height=120&section=footer&animation=fadeIn" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=140&section=footer&animation=fadeIn&stroke=F5A623&strokeWidth=1" width="100%" />
 
 </div>
