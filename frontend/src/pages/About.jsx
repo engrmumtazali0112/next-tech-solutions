@@ -12,7 +12,7 @@ const VALUES = [
 ]
 
 const MILESTONES = [
-  { year: '2019', title: 'Founded',          desc: 'AI & Django Innovators started as a freelance Django consultancy.' },
+  { year: '2019', title: 'Founded',          desc: 'Axon Forge started as a freelance Django consultancy.' },
   { year: '2020', title: 'First SaaS',       desc: 'Built and launched our first full SaaS product for a US-based startup.' },
   { year: '2021', title: 'Team Expansion',   desc: 'Grew to a 4-person team with specialized frontend and DevOps expertise.' },
   { year: '2022', title: 'AI Integration',   desc: 'Added AI/ML services as LLMs became mainstream tools for businesses.' },
@@ -32,7 +32,7 @@ export default function About() {
             We're a Team of Engineers Who Actually Care
           </h1>
           <p className={styles.heroDesc}>
-            Founded in 2024, Next Tech Solutions is a remote-first software development agency
+            Founded in 2019, Axon Forge is a remote-first software development agency
             specializing in intelligent full-stack solutions. We bridge the gap between cutting-edge
             AI technology and real-world business needs.
           </p>

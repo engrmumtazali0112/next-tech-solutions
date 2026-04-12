@@ -3,22 +3,45 @@ import { Github, Linkedin, Twitter, Mail, MapPin, Clock, DollarSign } from 'luci
 import styles from './Footer.module.css'
 
 /* ── Same LogoMark as Navbar ─────────────────────────── */
+const BLUE = '#5BB8E8'
+const GOLD = '#F5A623'
+
 function LogoMark() {
   return (
-    <svg width="36" height="36" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      width="44"
+      height="30"
+      viewBox="0 0 44 30"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-label="Axon Forge icon"
+    >
+      {/* Top gold line */}
       <path
-        d="M19 6 C15 6 13 8 13 12 L13 17 C13 20 11 21 9 22 C11 23 13 24 13 27 L13 32 C13 36 15 38 19 38"
-        stroke="white" strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round"/>
+        d="M2,26 C10,22 22,10 40,5"
+        stroke={GOLD}
+        strokeWidth="2.6"
+        strokeLinecap="round"
+      />
+      <circle cx="40" cy="5" r="2.2" fill={GOLD} />
+
+      {/* Middle blue line */}
       <path
-        d="M25 6 C29 6 31 8 31 12 L31 17 C31 20 33 21 35 22 C33 23 31 24 31 27 L31 32 C31 36 29 38 25 38"
-        stroke="#F5A623" strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round"/>
-      <rect x="29" y="4"  width="3"   height="3"   fill="#F5A623" opacity="0.9"/>
-      <rect x="33" y="4"  width="2"   height="2"   fill="#F5A623" opacity="0.7"/>
-      <rect x="36" y="2"  width="2"   height="2"   fill="#F5A623" opacity="0.5"/>
-      <rect x="33" y="8"  width="2"   height="2"   fill="#F5A623" opacity="0.6"/>
-      <rect x="37" y="6"  width="1.5" height="1.5" fill="#F5A623" opacity="0.4"/>
-      <rect x="39" y="4"  width="1.5" height="1.5" fill="#F5A623" opacity="0.25"/>
-      <rect x="36" y="10" width="1.5" height="1.5" fill="#F5A623" opacity="0.3"/>
+        d="M2,28 C10,25 22,16 39,12"
+        stroke={BLUE}
+        strokeWidth="2.6"
+        strokeLinecap="round"
+      />
+      <circle cx="39" cy="12" r="2.2" fill={BLUE} />
+
+      {/* Bottom gold line */}
+      <path
+        d="M2,29.5 C10,28 22,22 38,19"
+        stroke={GOLD}
+        strokeWidth="2.6"
+        strokeLinecap="round"
+      />
+      <circle cx="38" cy="19" r="2.2" fill={GOLD} />
     </svg>
   )
 }
@@ -37,7 +60,9 @@ export default function Footer() {
               <LogoMark />
               <span className={styles.logoText}>
                 <span className={styles.logoMain}>
-                  Next <span className={styles.logoGold}>Tech</span>
+                  <span style={{ color: BLUE }}>AXON</span>
+                  {' '}
+                  <em style={{ color: GOLD, fontStyle: 'normal' }}>FORGE</em>
                 </span>
                 <span className={styles.logoSub}>Solutions</span>
               </span>
@@ -92,8 +117,7 @@ export default function Footer() {
         </div>
 
         <div className={styles.bottom}>
-          <p>© {new Date().getFullYear()} Next Tech Solutions. All rights reserved.</p>
-          
+          <p>© {new Date().getFullYear()} Axon Forge. All rights reserved.</p>
         </div>
       </div>
     </footer>

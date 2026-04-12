@@ -4,7 +4,7 @@ import toast from 'react-hot-toast'
 import { Mail, Phone, MapPin, Send, Check, Github, Linkedin, Twitter, Clock, DollarSign } from 'lucide-react'
 import styles from './Contact.module.css'
 
-/* ── EmailJS credentials (unchanged) ── */
+/* ── EmailJS credentials ── */
 const EMAILJS_SERVICE_ID  = '21dmbcs124'
 const EMAILJS_TEMPLATE_ID = 'template_9pkkqa9'
 const EMAILJS_PUBLIC_KEY  = 'gP5gF9RPdQC3gvB-c'
@@ -37,19 +37,27 @@ const FAQ = [
   { q: 'Do you sign NDAs?',                  a: 'Absolutely. We sign NDAs before any project discussion.' },
 ]
 
-/* ── Shared { } logo mark ── */
-function LogoMark({ size = 26 }) {
+const BLUE = '#5BB8E8'
+const GOLD = '#F5A623'
+
+/* ── Axon Forge logo mark (matching Navbar) ── */
+function LogoMark({ size = 36 }) {
+  const scale = size / 44
   return (
-    <svg width={size} height={size} viewBox="0 0 44 44" fill="none">
-      <path d="M19 6C15 6 13 8 13 12L13 17C13 20 11 21 9 22C11 23 13 24 13 27L13 32C13 36 15 38 19 38"
-        stroke="white" strokeWidth="2.8" strokeLinecap="round"/>
-      <path d="M25 6C29 6 31 8 31 12L31 17C31 20 33 21 35 22C33 23 31 24 31 27L31 32C31 36 29 38 25 38"
-        stroke="#F5A623" strokeWidth="2.8" strokeLinecap="round"/>
-      <rect x="29" y="4" width="3"   height="3"   fill="#F5A623" opacity="0.9"/>
-      <rect x="33" y="4" width="2"   height="2"   fill="#F5A623" opacity="0.7"/>
-      <rect x="36" y="2" width="2"   height="2"   fill="#F5A623" opacity="0.5"/>
-      <rect x="33" y="8" width="2"   height="2"   fill="#F5A623" opacity="0.6"/>
-      <rect x="37" y="6" width="1.5" height="1.5" fill="#F5A623" opacity="0.4"/>
+    <svg
+      width={44 * scale}
+      height={30 * scale}
+      viewBox="0 0 44 30"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-label="Axon Forge icon"
+    >
+      <path d="M2,26 C10,22 22,10 40,5" stroke={GOLD} strokeWidth="2.6" strokeLinecap="round" />
+      <circle cx="40" cy="5" r="2.2" fill={GOLD} />
+      <path d="M2,28 C10,25 22,16 39,12" stroke={BLUE} strokeWidth="2.6" strokeLinecap="round" />
+      <circle cx="39" cy="12" r="2.2" fill={BLUE} />
+      <path d="M2,29.5 C10,28 22,22 38,19" stroke={GOLD} strokeWidth="2.6" strokeLinecap="round" />
+      <circle cx="38" cy="19" r="2.2" fill={GOLD} />
     </svg>
   )
 }
@@ -96,7 +104,7 @@ export default function Contact() {
   return (
     <main className={styles.page}>
 
-      {/* ── Hero ──────────────────────────────────── */}
+      {/* ── Hero ── */}
       <div className={styles.hero}>
         <div className={styles.heroBg} />
         <div className={styles.heroLine} />
@@ -109,11 +117,10 @@ export default function Contact() {
             Let's Build Something{' '}
             <span className={styles.gold}>Amazing</span>
           </h1>
-         
         </div>
       </div>
 
-      {/* ── Body ──────────────────────────────────── */}
+      {/* ── Body ── */}
       <div className="container">
         <div className={styles.layout}>
 
@@ -163,9 +170,9 @@ export default function Contact() {
           {/* ── Right form ── */}
           <div className={styles.formWrap}>
 
-            {/* Form header with logo */}
+            {/* Form header with Axon Forge logo */}
             <div className={styles.formHead}>
-              <LogoMark size={28} />
+              <LogoMark size={36} />
               <div>
                 <h2 className={styles.formTitle}>Send a Message</h2>
                 <p className={styles.formSubtitle}>
@@ -270,7 +277,7 @@ export default function Contact() {
         </div>
       </div>
 
-      {/* ── FAQ ───────────────────────────────────── */}
+      {/* ── FAQ ── */}
       <section className={styles.faqSection}>
         <div className="container">
           <div className={styles.faqHead}>

@@ -6,6 +6,9 @@ import styles from './Home.module.css'
 
 const API = 'http://localhost:8000'
 
+const BLUE = '#5BB8E8'
+const GOLD = '#F5A623'
+
 function AnimatedCounter({ target, suffix = '' }) {
   const [count, setCount] = useState(0)
   useEffect(() => {
@@ -19,6 +22,28 @@ function AnimatedCounter({ target, suffix = '' }) {
     return () => clearInterval(timer)
   }, [target])
   return <span>{count}{suffix}</span>
+}
+
+/* ── Axon Forge LogoMark (matching Navbar) ── */
+function LogoMark({ size = 44 }) {
+  const scale = size / 44
+  return (
+    <svg
+      width={44 * scale}
+      height={30 * scale}
+      viewBox="0 0 44 30"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-label="Axon Forge icon"
+    >
+      <path d="M2,26 C10,22 22,10 40,5" stroke={GOLD} strokeWidth="2.6" strokeLinecap="round" />
+      <circle cx="40" cy="5" r="2.2" fill={GOLD} />
+      <path d="M2,28 C10,25 22,16 39,12" stroke={BLUE} strokeWidth="2.6" strokeLinecap="round" />
+      <circle cx="39" cy="12" r="2.2" fill={BLUE} />
+      <path d="M2,29.5 C10,28 22,22 38,19" stroke={GOLD} strokeWidth="2.6" strokeLinecap="round" />
+      <circle cx="38" cy="19" r="2.2" fill={GOLD} />
+    </svg>
+  )
 }
 
 const TECH_ITEMS = ['FastAPI', 'React.js', 'Django', 'PostgreSQL', 'AWS', 'Docker', 'OpenAI', 'LangChain', 'React Native', 'Redis', 'Stripe', 'CI/CD']
@@ -51,7 +76,7 @@ export default function Home() {
   return (
     <div>
 
-      {/* ── Hero ─────────────────────────────────────────────── */}
+      {/* ── Hero ── */}
       <section className={styles.hero}>
         <div className={styles.heroBg} />
         <div className={styles.heroBottomLine} />
@@ -60,7 +85,7 @@ export default function Home() {
             <div className={styles.heroLeft}>
               <div className={styles.heroEyebrow}>
                 <span className={styles.eyebrowDot} />
-                Welcome to Next Tech Solutions
+                Welcome to Axon Forge
               </div>
               <h1 className={styles.heroTitle}>Make Your Business</h1>
               <h1 className={styles.heroTitle2}><span className={styles.goldText}>Automate & Scale</span></h1>
@@ -85,12 +110,15 @@ export default function Home() {
 
             <div className={styles.heroVisual}>
               <div className={styles.quoteCard}>
-                <div className={styles.quoteMark}>"</div>
+                {/* Axon Forge logo in quote card */}
+                <div style={{ marginBottom: 12 }}>
+                  <LogoMark size={36} />
+                </div>
                 <div className={styles.quoteStars}>
-                  {[...Array(5)].map((_, i) => <Star key={i} size={13} fill="#F5A623" color="#F5A623" />)}
+                  {[...Array(5)].map((_, i) => <Star key={i} size={13} fill={GOLD} color={GOLD} />)}
                 </div>
                 <p className={styles.quoteText}>
-                  "Next Tech automated our entire workflow. What used to take{' '}
+                  "Axon Forge automated our entire workflow. What used to take{' '}
                   <em>3 days now runs in minutes.</em> ROI was visible in week one."
                 </p>
                 <div className={styles.quoteMeta}>
@@ -119,7 +147,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Tech Marquee ─────────────────────────────────────── */}
+      {/* ── Tech Marquee ── */}
       <div className={styles.techBar}>
         <div className={styles.marqueeTrack}>
           {[...TECH_ITEMS, ...TECH_ITEMS].map((t, i) => (
@@ -130,7 +158,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* ── Stats ────────────────────────────────────────────── */}
+      {/* ── Stats ── */}
       {stats && (
         <section className={styles.statsSection}>
           <div className="container">
@@ -144,7 +172,7 @@ export default function Home() {
         </section>
       )}
 
-      {/* ── Services ─────────────────────────────────────────── */}
+      {/* ── Services ── */}
       <section className="section">
         <div className="container">
           <div className={styles.sectionHead}>
@@ -158,7 +186,6 @@ export default function Home() {
           <div className={styles.srvGrid}>
             {services.map((s, i) => (
               <div key={s.id} className={styles.srvCard} style={{ animationDelay: `${i * 0.08}s` }}>
-                {/* Image or placeholder */}
                 {s.photo_url ? (
                   <div className={styles.srvImgWrap}>
                     <img src={`${API}${s.photo_url}`} alt={s.title} className={styles.srvImg} />
@@ -180,7 +207,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Automate ─────────────────────────────────────────── */}
+      {/* ── Automate ── */}
       <section className={styles.automate}>
         <div className="container">
           <div className={styles.autoGrid}>
@@ -219,7 +246,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Why Us ───────────────────────────────────────────── */}
+      {/* ── Why Us ── */}
       <section className="section">
         <div className="container">
           <div className={styles.whyGrid}>
@@ -254,7 +281,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Testimonials ─────────────────────────────────────── */}
+      {/* ── Testimonials ── */}
       {testimonials.length > 0 && (
         <section className={`section ${styles.testi}`}>
           <div className="container">
@@ -265,7 +292,7 @@ export default function Home() {
             <div className={styles.testiGrid}>
               {testimonials.map(t => (
                 <div key={t.id} className={styles.tc}>
-                  <div className={styles.tcStars}>{[...Array(t.rating)].map((_, i) => <Star key={i} size={13} fill="#F5A623" color="#F5A623" />)}</div>
+                  <div className={styles.tcStars}>{[...Array(t.rating)].map((_, i) => <Star key={i} size={13} fill={GOLD} color={GOLD} />)}</div>
                   <p className={styles.tcText}>"{t.text}"</p>
                   <div className={styles.tcAuthor}>
                     <div className={styles.tcAv}>{t.avatar}</div>
@@ -278,7 +305,7 @@ export default function Home() {
         </section>
       )}
 
-      {/* ── CTA ──────────────────────────────────────────────── */}
+      {/* ── CTA ── */}
       <section className={styles.ctaSec}>
         <div className="container">
           <div className={styles.ctaBox}>
