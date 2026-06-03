@@ -90,7 +90,7 @@ class ServiceModel(Base):
 # ─── FastAPI app ──────────────────────────────────────────────────────────────
 
 app = FastAPI(
-    title       = "Next Tech Solutions API",
+    title       = "Axon Forge  API",
     version     = "2.0.0",
     description = "Services CRUD + image upload + contact form",
 )
