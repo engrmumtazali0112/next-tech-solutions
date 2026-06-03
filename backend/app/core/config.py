@@ -4,7 +4,7 @@ import json
 
 
 class Settings(BaseSettings):
-    APP_NAME: str = "TechNova IT Solutions"
+    APP_NAME: str = "Axon Forge"  # Changed from "TechNova IT Solutions"
     APP_VERSION: str = "1.0.0"
     DEBUG: bool = True
     ENVIRONMENT: str = "development"
@@ -19,13 +19,13 @@ class Settings(BaseSettings):
 
     ALLOWED_ORIGINS: str = '["http://localhost:3000","http://localhost:5173", "http://127.0.0.1:3000", "http://127.0.0.1:5173"]'
 
-    # Email (from your .env in the image)
+    # Email (update with correct credentials)
     SMTP_HOST: str = "smtp.gmail.com"
     SMTP_PORT: int = 587
-    SMTP_USERNAME: str = "your-email@gmail.com"
-    SMTP_PASSWORD: str = "Dmuntaz12@"
-    EMAIL_FROM: str = "your-email@gmail.com"
-    EMAIL_TO: str = "contact@yourcompany.com"
+    SMTP_USERNAME: str = "engrmumtazali01@gmail.com"  # Updated
+    SMTP_PASSWORD: str = "your-app-password-here"  # Update with actual Gmail app password
+    EMAIL_FROM: str = "engrmumtazali01@gmail.com"  # Updated
+    EMAIL_TO: str = "engrmumtazali01@gmail.com"  # Updated to send to yourself
 
     # File Uploads
     UPLOAD_DIR: str = "media/uploads"
